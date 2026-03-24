@@ -8,7 +8,7 @@ auto main(int argc, char *argv[]) -> int {
   if (argc > 1) {
     name = argv[1];
   }
-
+  int i;
   std::cout << test_clang::BuildGreeting(name) << '\n';
   return 0;
 }

@@ -6,4 +6,5 @@ repo_root="$(git rev-parse --show-toplevel)"
 cd "$repo_root"
 
 echo "[HOOK] pre-commit: checking staged C/C++ files"
+echo "$(date '+%Y-%m-%d %H:%M:%S') pre-commit triggered" >> .git_hook.log
 bash scripts/check_style.sh --staged

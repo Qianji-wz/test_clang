@@ -1,2 +1,4 @@
 build/
 compile_commands.json
+.cache/
+.git_hook.log
